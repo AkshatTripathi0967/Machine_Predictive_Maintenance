@@ -1,3 +1,4 @@
+from pathlib import Path
 import json
 import joblib
 import altair as alt
@@ -46,7 +47,7 @@ def kpi(label, value, note="", tone="#2F5D7C"):
             f'<div class="kv">{value}</div><div class="kn">{note}&nbsp;</div></div>')
 
 
-MODEL_PATH = r"C:\Machine Learning Projects\predictive maintenance\random_forest_model.pkl"  # your own trained model
+MODEL_PATH = Path(__file__).resolve().parent / "random_forest_model.pkl"  # your own trained model
 
 
 @st.cache_resource
