@@ -1,5 +1,6 @@
 # Predictive Maintenance Dashboard
 
+Deployed Link :- https://machinepredictivemaintenance-qnpp6mmmychrccd4qhbvxh.streamlit.app/
 A Streamlit dashboard that uses a trained Random Forest model to estimate the risk that each machine in a fleet will fail within the next 6 hours, so maintenance can be scheduled before a breakdown.
 
 The data comes from the Microsoft Azure Predictive Maintenance dataset: 100 machines, hourly sensor readings (`volt`, `rotate`, `pressure`, `vibration`), error logs, maintenance history and failure records.
